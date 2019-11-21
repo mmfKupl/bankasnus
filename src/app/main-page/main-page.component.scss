@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.about{
+    width: 100%;
+}
+
+.about-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 50px;
+    text-align: center;
+    
+    .about-contact{
+        color: #222533;
+        font-size: 30px;
+        font-weight: 600;
+        padding-bottom: 40px;
+    }
+
+    .about-buy{
+        padding-bottom: 20px;
+    }
+
+    .about-bb{
+        width: 66px;
+        height: 3px;
+        background-color: #ffce55;
+        align-self: center;
+    }
+}
+
+.gallery{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.gallery-desc{
+    color: #333;;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.gallery-wrapper{
+    display: flex;
+    padding: 0px 50px;
+    width: 100%;
+    box-sizing: border-box;
+
+    img{
+        width: 25%;
+        height: auto;
+    }
+}
