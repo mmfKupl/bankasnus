@@ -7,10 +7,10 @@ import { TransferHttpCacheModule } from '@nguniversal/common';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { SliderComponent } from './slider/slider.component';
 import { ImageSetComponent } from './image-set/image-set.component';
-import { HeaderInfoComponent } from './header-info/header-info.component';
 import { PageComponent } from './page/page.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { GalleryPageComponent } from './gallery-page/gallery-page.component';
+import { TopInfoComponent } from './top-info/top-info.component';
 
 @NgModule({
   declarations: [
@@ -18,10 +18,10 @@ import { GalleryPageComponent } from './gallery-page/gallery-page.component';
     ContactFormComponent,
     SliderComponent,
     ImageSetComponent,
-    HeaderInfoComponent,
     PageComponent,
     MainPageComponent,
-    GalleryPageComponent
+    GalleryPageComponent,
+    TopInfoComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

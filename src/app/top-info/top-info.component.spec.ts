@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HeaderInfoComponent } from './header-info.component';
+import { TopInfoComponent } from './top-info.component';
 
-describe('HeaderInfoComponent', () => {
-  let component: HeaderInfoComponent;
-  let fixture: ComponentFixture<HeaderInfoComponent>;
+describe('TopInfoComponent', () => {
+  let component: TopInfoComponent;
+  let fixture: ComponentFixture<TopInfoComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HeaderInfoComponent ]
+      declarations: [ TopInfoComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HeaderInfoComponent);
+    fixture = TestBed.createComponent(TopInfoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
