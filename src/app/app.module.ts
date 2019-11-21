@@ -9,9 +9,20 @@ import { SliderComponent } from './slider/slider.component';
 import { ImageSetComponent } from './image-set/image-set.component';
 import { HeaderInfoComponent } from './header-info/header-info.component';
 import { PageComponent } from './page/page.component';
+import { MainPageComponent } from './main-page/main-page.component';
+import { GalleryPageComponent } from './gallery-page/gallery-page.component';
 
 @NgModule({
-  declarations: [AppComponent, ContactFormComponent, SliderComponent, ImageSetComponent, HeaderInfoComponent, PageComponent],
+  declarations: [
+    AppComponent,
+    ContactFormComponent,
+    SliderComponent,
+    ImageSetComponent,
+    HeaderInfoComponent,
+    PageComponent,
+    MainPageComponent,
+    GalleryPageComponent
+  ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
