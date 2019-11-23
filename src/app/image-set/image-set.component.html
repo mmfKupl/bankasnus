@@ -1,1 +1,11 @@
-<p>image-set works!</p>
+<div class="image-set">
+    <div class="image-set-wrapper">
+        <h2 class="image-set-title">ОРИГИНАЛЬНЫЕ баночки для снюса  Odenss Cold Dry и SIBERIA</h2>
+        <div class="img-wrap">
+            <img *ngFor="let imgpath of img" src= {{imgpath}} alt="изображение баночки">
+        </div>
+        <a href="">
+            <img class="buy" src="../../assets/zakazat.png" alt="">
+        </a>
+    </div>
+</div>

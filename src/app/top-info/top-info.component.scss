@@ -4,8 +4,11 @@
 }
 
 .app-top-info{
+    display: flex;
     width: 100%;
-    min-height: 700px;
+    min-height: 950px;
+    align-items: center;
+    justify-content: center;
     background-image: url(../../assets/header-bg.jpg);
     background-size: cover;
     background-color: black;

@@ -1,0 +1,40 @@
+.image-set{
+    font-family: Roboto,Arial,sans-serif;
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.image-set-wrapper{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 30px 120px;
+    justify-content: center;
+    align-items: center;
+
+    .image-set-title{
+        margin-top: 0;
+        font-size: 36px;
+        color: #333333;
+    }
+
+    .img-wrap{
+        margin-bottom: 30px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img:not(.buy){
+        width: 300px;
+        height: 300px;
+    }
+
+    .buy{
+        margin: 10px 0;
+    }
+}
