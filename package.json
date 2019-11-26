@@ -26,7 +26,10 @@
     "@angular/router": "~8.2.14",
     "@nguniversal/express-engine": "^8.1.1",
     "@nguniversal/module-map-ngfactory-loader": "8.1.1",
-    "express": "^4.15.2",
+    "@nicky-lenaers/ngx-scroll-to": "^3.0.1",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "nodemailer": "^6.3.1",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"

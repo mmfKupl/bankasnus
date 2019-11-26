@@ -1,11 +1,26 @@
 <div class="image-set">
-    <div class="image-set-wrapper">
-        <h2 class="image-set-title">ОРИГИНАЛЬНЫЕ баночки для снюса  Odenss Cold Dry и SIBERIA</h2>
-        <div class="img-wrap">
-            <img *ngFor="let imgpath of img" src= {{imgpath}} alt="изображение баночки">
-        </div>
-        <a href="">
-            <img class="buy" src="../../assets/zakazat.png" alt="">
-        </a>
+  <div class="image-set-wrapper">
+    <h2 class="image-set-title">
+      ОРИГИНАЛЬНЫЕ баночки для снюса Odenss Cold Dry и SIBERIA
+    </h2>
+    <div class="img-wrapper">
+      <div
+        (click)="openSlider(i)"
+        class="image-box"
+        *ngFor="let imgPath of imgs; let i = index"
+      >
+        <div class="image-hover-box"></div>
+        <img [src]="imgPath" alt="изображение баночки" />
+      </div>
     </div>
+    <a routerLink="" fragment="contact-form">
+      <img class="buy" src="../../assets/zakazat.png" alt="заказать" />
+    </a>
+  </div>
 </div>
+<app-slider
+  *ngIf="isSliderOpen"
+  [imgs]="imgs"
+  [activeImg]="currentSlide"
+  (closeEvent)="closeSlider()"
+></app-slider>

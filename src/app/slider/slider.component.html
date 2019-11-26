@@ -1,1 +1,12 @@
-<p>slider works!</p>
+<div class="slider-box">
+  <a class="close" (click)="close()"></a>
+  <div
+    class="slide"
+    *ngFor="let img of imgs; let i = index"
+    [class.active-slide]="isActive(i)"
+  >
+    <a (click)="prev()" class="prev"></a>
+    <img [src]="img" alt="картинка банки" />
+    <a (click)="next()" class="next"></a>
+  </div>
+</div>

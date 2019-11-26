@@ -1,73 +1,79 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.app-top-info{
-    display: flex;
-    width: 100%;
-    min-height: 950px;
-    align-items: center;
-    justify-content: center;
-    background-image: url(../../assets/header-bg.jpg);
-    background-size: cover;
-    background-color: black;
+.app-top-info {
+  display: flex;
+  width: 100%;
+  min-height: 950px;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../../assets/header-bg.jpg);
+  background-size: cover;
+  background-color: black;
 }
 
-.top-info-wrapper{
-    display: flex;
-    padding: 75px;
-    flex-direction: column;
+.top-info-wrapper {
+  display: flex;
+  padding: 75px 300px;
+  flex-direction: column;
 }
 
-.top-info-header{
-    display: flex;
-    margin-bottom: 50px;
-    color: #ffce55; 
-    text-align: center;
-    flex-direction: column;
+.top-info-header {
+  display: flex;
+  margin-bottom: 50px;
+  color: #ffce55;
+  text-align: center;
+  flex-direction: column;
 
-    .header__title{
-        padding-bottom: 40px;
-        font-size: 37px;
-        font-weight: 700;  
-    }
+  .header__title {
+    padding-bottom: 40px;
+    font-size: 37px;
+    font-weight: 700;
+  }
 
-    .header__bb{
-        width: 75px;
-        height: 4px;
-        background-color: #ffce55;
-        align-self: center;
-    }
-}
-
-.top-info-main{
-    display: flex;
-    margin-bottom: 35px;
-    text-align: center;
-    flex-direction: column;
-    color: #fff;
-
-    .main__title{
-        font-size: 57px;
-        font-weight: 600;
-        padding-bottom: 15px;
-    }
-
-    .main__text{
-        font-size: 20px;
-    }
-}
-
-.top-info-button{
-    width: fit-content;
+  .header__bb {
+    width: 75px;
+    height: 4px;
+    background-color: #ffce55;
     align-self: center;
-    font-size: 18px;
-    padding: 20px 40px;
+  }
+}
+
+.top-info-main {
+  display: flex;
+  margin-bottom: 35px;
+  text-align: center;
+  flex-direction: column;
+  color: #fff;
+
+  .main__title {
+    font-size: 57px;
     font-weight: 600;
-    color: #fff;
-    border-radius: 100px;
-    background-color: #f2c351;
-    margin: 10px 0;
-    border: none;
+    padding-bottom: 15px;
+  }
+
+  .main__text {
+    font-size: 20px;
+  }
+}
+
+.top-info-button {
+  text-decoration: none;
+  width: fit-content;
+  align-self: center;
+  font-size: 18px;
+  padding: 20px 40px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 100px;
+  background-color: #f2c351;
+  margin: 10px 0;
+  border: none;
+  cursor: pointer;
+}
+
+.top-info-button:hover {
+  background-color: #ffce55;
 }

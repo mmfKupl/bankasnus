@@ -11,6 +11,9 @@ import { PageComponent } from './page/page.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { GalleryPageComponent } from './gallery-page/gallery-page.component';
 import { TopInfoComponent } from './top-info/top-info.component';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,11 @@ import { TopInfoComponent } from './top-info/top-info.component';
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
-    TransferHttpCacheModule
+    TransferHttpCacheModule,
+    FormsModule,
+    ReactiveFormsModule,
+    ScrollToModule.forRoot(),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,1 +1,66 @@
-<p>contact-form works!</p>
+<section class="connection">
+  <div class="connection-wrapper">
+    <h2 class="connection-title">
+      Свяжитесь с нами! <br />
+      У нас самые низкие цены!
+    </h2>
+    <div class="connection-bb"></div>
+    <p class="connection-desc">Мы ответим Вам в ближайшее время</p>
+    <div class="connection-form">
+      <div class="form-info">
+        <div class="info__contacts">
+          <h3 class="contacts-title">Минск. Беларусь</h3>
+          <p class="contacts-desc">
+            Разуванова Ирина <br />
+            Викторовна ИП ИНН <br />
+            470712172559
+          </p>
+        </div>
+        <div class="info__contacts">
+          <h3 class="contacts-title">Контакты</h3>
+          <p class="contacts-desc">
+            Телефон: <br />
+            <a href="tel:+79816879756">+7 981 6879756</a> <br />
+            <a href="tel:+375253530003">+375 25 3530003</a> <br />
+            E-mail: <a href="mailto:razvik@bk.ru">razvik@bk.ru</a>
+          </p>
+        </div>
+      </div>
+      <form
+        [formGroup]="contactForm"
+        id="contact-form"
+        (ngSubmit)="submitForm()"
+      >
+        <label for="name">Ваше имя (обязательно)</label>
+        <p *ngIf="name.invalid && (name.dirty || name.touched)">
+          Поле обязательно для заполнения.
+        </p>
+        <input formControlName="name" type="text" id="name" required />
+
+        <label for="email">Ваш e-mail (обязательно)</label>
+        <p *ngIf="email.invalid && (email.dirty || email.touched)">
+          Поле обязательно для заполнения.
+        </p>
+        <input formControlName="email" type="email" id="email" required />
+
+        <label for="theme">Тема</label>
+        <input formControlName="theme" type="text" id="theme" />
+
+        <label for="message">Сообщение</label>
+        <textarea
+          formControlName="message"
+          id="message"
+          cols="30"
+          rows="10"
+        ></textarea>
+
+        <input
+          class="send"
+          type="submit"
+          value="Отправить"
+          [disabled]="contactForm.invalid"
+        />
+      </form>
+    </div>
+  </div>
+</section>

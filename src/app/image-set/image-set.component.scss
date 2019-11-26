@@ -1,40 +1,65 @@
-.image-set{
-    font-family: Roboto,Arial,sans-serif;
-    display: flex;
-    width: 100%;
-    padding: 0;
-    margin: 0;
+.image-set {
+  font-family: Roboto, Arial, sans-serif;
+  display: flex;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
-.image-set-wrapper{
-    display: flex;
+.image-set-wrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 30px 200px;
+  justify-content: center;
+  align-items: center;
+
+  .image-set-title {
+    margin-top: 0;
+    font-size: 36px;
+    color: #333333;
+  }
+
+  .img-wrapper {
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    max-width: 1160px;
     width: 100%;
-    flex-direction: column;
-    padding: 30px 120px;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 
-    .image-set-title{
-        margin-top: 0;
-        font-size: 36px;
-        color: #333333;
+    div.image-box {
+      box-sizing: content-box;
+      position: relative;
+      border: 2.5px solid #f0f0f0;
+      width: 280px;
+      height: 280px;
+      cursor: pointer;
     }
 
-    .img-wrap{
-        margin-bottom: 30px;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+    div.image-hover-box {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 280px;
+      height: 280px;
     }
 
-    img:not(.buy){
-        width: 300px;
-        height: 300px;
+    div.image-hover-box:hover {
+      background-color: rgba(0, 0, 0, 0.28);
     }
+  }
 
-    .buy{
-        margin: 10px 0;
-    }
+  img:not(.buy) {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+  }
+
+  .buy {
+    margin: 10px 0;
+  }
 }

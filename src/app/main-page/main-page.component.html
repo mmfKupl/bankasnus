@@ -5,7 +5,7 @@
       <h2 class="about-contact">Мы находимся в городе Минск Беларусь.</h2>
       <h2 class="about-contact">Телефон +7 981 6879756</h2>
       <h2 class="about-contact">Viber, Телеграмм, WhatsApp :+372 53530003</h2>
-      <a href="#" class="about-buy">
+      <a routerLink="/" fragment="contact-form" class="about-buy">
         <img src="../../assets/zakazat.png" alt="" />
       </a>
       <div class="about-bb"></div>
@@ -16,69 +16,29 @@
     <div class="gallery-wrapper">
       <div>
         <div class="hover">
-          <a class="link" href="#">Посмотреть проект</a>
+          <a class="link" routerLink="/gallery">Посмотреть проект</a>
         </div>
         <img src="../../assets/1.jpg" alt="1" />
       </div>
       <div>
         <div class="hover">
-          <a class="link" href="#">Посмотреть проект</a>
+          <a class="link" routerLink="/gallery">Посмотреть проект</a>
         </div>
         <img src="../../assets/8.jpg" alt="8" />
       </div>
       <div>
         <div class="hover">
-          <a class="link" href="#">Посмотреть проект</a>
+          <a class="link" routerLink="/gallery">Посмотреть проект</a>
         </div>
         <img src="../../assets/6.jpg" alt="6" />
       </div>
       <div>
         <div class="hover">
-          <a class="link" href="#">Посмотреть проект</a>
+          <a class="link" routerLink="/gallery">Посмотреть проект</a>
         </div>
         <img src="../../assets/9.jpg" alt="9" />
       </div>
     </div>
   </section>
-  <section class="connection">
-    <div class="connection-wrapper">
-      <h2 class="connection-title">
-        Свяжитесь с нами! <br />
-        У нас самые низкие цены!
-      </h2>
-      <div class="connection-bb"></div>
-      <p class="connection-desc">Мы ответим Вам в ближайшее время</p>
-      <div class="connection-form">
-        <div class="form-info">
-          <div class="info__contacts">
-            <h3 class="contacts-title">Минск. Беларусь</h3>
-            <p class="contacts-desc">
-              Разуванова Ирина <br />
-              Викторовна ИП ИНН <br />
-              470712172559
-            </p>
-          </div>
-          <div class="info__contacts">
-            <h3 class="contacts-title">Контакты</h3>
-            <p class="contacts-desc">
-              Телефон: +7 981 6879756 <br />
-              +37253530003 <br />
-              E-mail: razvik@bk.ru
-            </p>
-          </div>
-        </div>
-        <form action="">
-          <label for="name">Ваше имя (обязательно)</label>
-          <input type="text" id="name" required />
-          <label for="email">Ваш e-mail (обязательно)</label>
-          <input type="email" id="email" required />
-          <label for="theme">Тема</label>
-          <input type="text" id="theme" />
-          <label for="message">Сообщение</label>
-          <textarea id="message" cols="30" rows="10"></textarea>
-          <input class="send" type="submit" value="Отправить" />
-        </form>
-      </div>
-    </div>
-  </section>
+  <app-contact-form></app-contact-form>
 </app-page>
