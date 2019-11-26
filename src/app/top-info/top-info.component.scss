@@ -18,11 +18,15 @@
   display: flex;
   padding: 75px 300px;
   flex-direction: column;
+
+  @media screen and (max-width: 768px) {
+    padding: 10px 50px;
+  } 
 }
 
 .top-info-header {
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: #ffce55;
   text-align: center;
   flex-direction: column;
@@ -31,6 +35,13 @@
     padding-bottom: 40px;
     font-size: 37px;
     font-weight: 700;
+
+    @media screen and (max-width: 425px) {
+      padding: 30px 0;
+      font-size: 20px;
+      font-weight: 400;
+    }
+
   }
 
   .header__bb {
@@ -52,9 +63,16 @@
     font-size: 57px;
     font-weight: 600;
     padding-bottom: 15px;
+
+    @media screen and (max-width: 425px) {
+      padding: 0;
+      font-size: 25px;
+      font-weight: 400;
+    }
   }
 
   .main__text {
+    margin-top: 20px;
     font-size: 20px;
   }
 }

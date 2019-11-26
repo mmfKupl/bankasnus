@@ -8,13 +8,14 @@ header {
 }
 
 .header-wrapper {
-  padding: 25px 300px;
+  width: 100%;
+  padding: 25px 200px;
   display: flex;
   align-content: center;
-  justify-content: center;
+  justify-content: space-between;
 
-  @media screen and (max-width: 800px) {
-    padding: 10px 80px;
+  @media screen and (max-width: 768px) {
+    padding: 25px 20px;
   }
 }
 
@@ -26,7 +27,7 @@ header {
 }
 
 .header-menu {
-  margin-left: auto;
+
 }
 
 footer {

@@ -12,6 +12,10 @@
   width: 100%;
   box-sizing: border-box;
 
+  @media screen and (max-width: 768px) {
+    padding: 30px 50px;
+  }
+
   .connection-title {
     font-size: 30px;
     padding-bottom: 15px;
@@ -41,11 +45,30 @@
     align-self: flex-start;
     margin-right: 30px;
   }
+
+  @media screen and (max-width: 768px) {
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .form-info{
+      align-self: center;
+    }
+
+    br:not(.mobile){
+      display: none;
+    }
+  }
 }
 
 .info__contacts {
   text-align: left;
   margin-bottom: 35px;
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
 
   .contacts-title {
     font-size: 21px;
@@ -64,6 +87,10 @@ form {
   display: flex;
   flex-direction: column;
   min-width: 75%;
+
+  @media screen and (max-width: 768px) {
+    min-width: 100%;
+  }
 
   p {
     text-align: left;
@@ -124,8 +151,12 @@ form {
     font-size: 15px;
     font-weight: 700;
     padding: 20px 30px;
-    width: 25%;
+    width: fit-content;
     cursor: pointer;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
   }
 
   .send:disabled {

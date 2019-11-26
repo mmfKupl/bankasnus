@@ -14,6 +14,11 @@
   padding: 30px 200px;
   text-align: center;
 
+  @media screen and (max-width: 768px) {
+    padding: 30px 50px;
+  }
+
+
   .about-contact {
     color: #222533;
     font-size: 30px;
@@ -21,8 +26,15 @@
     padding-bottom: 40px;
   }
 
-  .about-buy {
-    padding-bottom: 20px;
+  .about-buy{
+    display: flex;
+    justify-content: center;
+    
+    img {
+      margin: 10px 0;
+      max-width: 100%;
+      align-self: center;
+    }
   }
 
   .about-bb {
@@ -54,6 +66,10 @@
   padding: 0px 200px;
   width: 100%;
   box-sizing: border-box;
+
+  @media screen and (max-width: 768px) {
+    padding: 0 50px;
+  }
 
   div {
     position: relative;

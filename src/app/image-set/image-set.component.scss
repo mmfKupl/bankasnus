@@ -14,10 +14,19 @@
   justify-content: center;
   align-items: center;
 
+  @media screen and (max-width: 768px) {
+    padding: 30px 50px;
+  }
+
   .image-set-title {
     margin-top: 0;
     font-size: 36px;
     color: #333333;
+
+    @media screen and (max-width: 425px) {
+      font-size: 20px;
+      font-weight: 400;
+    }
   }
 
   .img-wrapper {
@@ -59,7 +68,14 @@
     object-fit: cover;
   }
 
-  .buy {
-    margin: 10px 0;
+  a{
+    display: flex;
+    justify-content: center;
+
+    .buy {
+      margin: 10px 0;
+      max-width: 100%;
+      align-self: center;
+    }
   }
 }
